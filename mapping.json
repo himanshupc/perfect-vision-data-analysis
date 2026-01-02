@@ -1,0 +1,352 @@
+[
+  {
+    "expected_field": "Autopay",
+    "fortza_layer_or_expectation": "Anomaly Layer (Layer); Intenso (Layer); Energico (Layer)",
+    "source_file": "Account.csv",
+    "source_column": "Fortza__Auto_Pay__c",
+    "status": "Present",
+    "null_percentage": 0.0,
+    "transform_needed": null,
+    "notes": "Autopay flag available"
+  },
+  {
+    "expected_field": "Tntype",
+    "fortza_layer_or_expectation": "Anomaly Layer (Layer); Intenso (Layer); Energico (Layer)",
+    "source_file": "Account.csv",
+    "source_column": "Fortza__Tn_Type__c",
+    "status": "Present but low quality (high nulls)",
+    "null_percentage": 100.0,
+    "transform_needed": null,
+    "notes": "Transaction type (port/new/upgrade) in Fortza fields"
+  },
+  {
+    "expected_field": "activation_date",
+    "fortza_layer_or_expectation": "Client Expectation: Service activation date for timing analysis",
+    "source_file": null,
+    "source_column": null,
+    "status": "Missing",
+    "null_percentage": null,
+    "transform_needed": null,
+    "notes": "Suggested source: Order.ActivatedDate"
+  },
+  {
+    "expected_field": "agent_email",
+    "fortza_layer_or_expectation": "Client Expectation: Sales agent/rep email",
+    "source_file": null,
+    "source_column": null,
+    "status": "Missing",
+    "null_percentage": null,
+    "transform_needed": null,
+    "notes": "Suggested source: User, Contact"
+  },
+  {
+    "expected_field": "agent_id",
+    "fortza_layer_or_expectation": "Client Expectation: Agent/salesperson identifier",
+    "source_file": null,
+    "source_column": null,
+    "status": "Missing",
+    "null_percentage": null,
+    "transform_needed": null,
+    "notes": "Suggested source: Order.SalesRep__c, OwnerId"
+  },
+  {
+    "expected_field": "audit_notes",
+    "fortza_layer_or_expectation": "Client Expectation: Audit notes for sentiment analysis",
+    "source_file": null,
+    "source_column": null,
+    "status": "Missing",
+    "null_percentage": null,
+    "transform_needed": null,
+    "notes": "Suggested source: CustomObject, Notes, External System"
+  },
+  {
+    "expected_field": "channel",
+    "fortza_layer_or_expectation": "Client Expectation: Sales channel (phone, retail, d2d)",
+    "source_file": null,
+    "source_column": null,
+    "status": "Missing",
+    "null_percentage": null,
+    "transform_needed": null,
+    "notes": "Suggested source: Lead.Division__c, Order.Call_Center_Type__c"
+  },
+  {
+    "expected_field": "commission_data",
+    "fortza_layer_or_expectation": "Client Expectation: Commission/stair-step data for dealer profiling",
+    "source_file": null,
+    "source_column": null,
+    "status": "Missing",
+    "null_percentage": null,
+    "transform_needed": null,
+    "notes": "Suggested source: CustomObject, External System"
+  },
+  {
+    "expected_field": "cust_city",
+    "fortza_layer_or_expectation": "Permanent Memory Geolocation (Layer); Google Address Validation (Layer); Smarty Address Validation (Layer); AI Prompt Layer (Layer); Anomaly Layer (Layer); Intenso (Layer); Energico (Layer)",
+    "source_file": "Account.csv",
+    "source_column": "BillingCity",
+    "status": "Present",
+    "null_percentage": 40.0,
+    "transform_needed": "Normalize address format, handle multi-line addresses",
+    "notes": "City available in multiple objects"
+  },
+  {
+    "expected_field": "cust_state",
+    "fortza_layer_or_expectation": "Permanent Memory Geolocation (Layer); Google Address Validation (Layer); Smarty Address Validation (Layer); Anomaly Layer (Layer); Intenso (Layer); Energico (Layer)",
+    "source_file": "Account.csv",
+    "source_column": "BillingState",
+    "status": "Present",
+    "null_percentage": 40.0,
+    "transform_needed": "Normalize address format, handle multi-line addresses",
+    "notes": "State available; both full name and ISO code present"
+  },
+  {
+    "expected_field": "cust_street",
+    "fortza_layer_or_expectation": "Permanent Memory Geolocation (Layer); Google Address Validation (Layer); Smarty Address Validation (Layer); AI Prompt Layer (Layer)",
+    "source_file": "Account.csv",
+    "source_column": "BillingStreet",
+    "status": "Present",
+    "null_percentage": 40.0,
+    "transform_needed": "Normalize address format, handle multi-line addresses",
+    "notes": "Street addresses available; may need parsing for multi-line"
+  },
+  {
+    "expected_field": "customer_name",
+    "fortza_layer_or_expectation": "Permanent Memory User Details (Layer); AI Prompt Layer (Layer); Gilbert Layer (Layer); Word Cloud Name (Layer); Anomaly Layer (Layer); Intenso (Layer); Energico (Layer); FBI Layer (Layer)",
+    "source_file": "Lead.csv",
+    "source_column": "Company",
+    "status": "Present",
+    "null_percentage": 0.0,
+    "transform_needed": "Derive from FirstName + LastName or related Contact",
+    "notes": "Customer name not directly available; must derive from related Account/Contact or join"
+  },
+  {
+    "expected_field": "dealer_id",
+    "fortza_layer_or_expectation": "Client Expectation: Dealer/partner identifier",
+    "source_file": null,
+    "source_column": null,
+    "status": "Missing",
+    "null_percentage": null,
+    "transform_needed": null,
+    "notes": "Suggested source: Account.POE_Dealer_Code__c, Order.POE_Dealer__c"
+  },
+  {
+    "expected_field": "dealer_name",
+    "fortza_layer_or_expectation": "Anomaly Layer (Layer); Intenso (Layer); Energico (Layer)",
+    "source_file": "Lead.csv",
+    "source_column": "Fortza__Dealer_Name__c",
+    "status": "Present but low quality (high nulls)",
+    "null_percentage": 100.0,
+    "transform_needed": null,
+    "notes": "Dealer reference available; may need Account lookup for full name"
+  },
+  {
+    "expected_field": "debt_balance",
+    "fortza_layer_or_expectation": "Client Expectation: Dealer debt balance",
+    "source_file": null,
+    "source_column": null,
+    "status": "Missing",
+    "null_percentage": null,
+    "transform_needed": null,
+    "notes": "Suggested source: Account financial fields, External System"
+  },
+  {
+    "expected_field": "destination_ip",
+    "fortza_layer_or_expectation": "Client Expectation: Destination/service IP",
+    "source_file": null,
+    "source_column": null,
+    "status": "Missing",
+    "null_percentage": null,
+    "transform_needed": null,
+    "notes": "Suggested source: CustomObject, Order"
+  },
+  {
+    "expected_field": "device_fingerprint",
+    "fortza_layer_or_expectation": "Client Expectation: Device ID for shared device detection",
+    "source_file": null,
+    "source_column": null,
+    "status": "Missing",
+    "null_percentage": null,
+    "transform_needed": null,
+    "notes": "Suggested source: CustomObject, Order"
+  },
+  {
+    "expected_field": "devicename",
+    "fortza_layer_or_expectation": "Anomaly Layer (Layer); Intenso (Layer); Energico (Layer)",
+    "source_file": "Lead.csv",
+    "source_column": "Fortza__Device_Name__c",
+    "status": "Present but low quality (high nulls)",
+    "null_percentage": 100.0,
+    "transform_needed": null,
+    "notes": "Device name only found in Lead; may need custom object"
+  },
+  {
+    "expected_field": "devicetype",
+    "fortza_layer_or_expectation": "Anomaly Layer (Layer); Intenso (Layer); Energico (Layer)",
+    "source_file": "Account.csv",
+    "source_column": "Fortza__Device_Type__c",
+    "status": "Present but low quality (high nulls)",
+    "null_percentage": 100.0,
+    "transform_needed": null,
+    "notes": "Device type (hotspot/smartphone/tablet/wearable) in Fortza fields"
+  },
+  {
+    "expected_field": "disconnection_date",
+    "fortza_layer_or_expectation": "Client Expectation: Service disconnect date for churn analysis",
+    "source_file": null,
+    "source_column": null,
+    "status": "Missing",
+    "null_percentage": null,
+    "transform_needed": null,
+    "notes": "Suggested source: Order.Disconnect_Date__c"
+  },
+  {
+    "expected_field": "email",
+    "fortza_layer_or_expectation": "Permanent Memory User Details (Layer); AI Prompt Layer (Layer); Gilbert Layer (Layer); Word Cloud Email (Layer); Anomaly Layer (Layer); Intenso (Layer); Energico (Layer)",
+    "source_file": "Account.csv",
+    "source_column": "PersonEmail",
+    "status": "Present but low quality (high nulls)",
+    "null_percentage": 100.0,
+    "transform_needed": "Normalize to lowercase",
+    "notes": "Email available in multiple objects"
+  },
+  {
+    "expected_field": "gender",
+    "fortza_layer_or_expectation": "AI Prompt Layer (Layer); Anomaly Layer (Layer); Intenso (Layer); Energico (Layer); FBI Layer (Layer)",
+    "source_file": "Account.csv",
+    "source_column": "Fortza__Gender__c",
+    "status": "Present but low quality (high nulls)",
+    "null_percentage": 100.0,
+    "transform_needed": null,
+    "notes": "Gender field available in Fortza custom fields"
+  },
+  {
+    "expected_field": "install_date",
+    "fortza_layer_or_expectation": "Client Expectation: Installation date for timing deltas",
+    "source_file": null,
+    "source_column": null,
+    "status": "Missing",
+    "null_percentage": null,
+    "transform_needed": null,
+    "notes": "Suggested source: Order.POE_InstallationDate__c"
+  },
+  {
+    "expected_field": "ip",
+    "fortza_layer_or_expectation": "IP Address Layer (Layer)",
+    "source_file": "Lead.csv",
+    "source_column": "Fortza__IP_Address__c",
+    "status": "Present but low quality (high nulls)",
+    "null_percentage": 100.0,
+    "transform_needed": null,
+    "notes": "IP address found in Lead.Fortza__IP_Address__c; Opportunity has fraud flag IP only"
+  },
+  {
+    "expected_field": "ipAddress",
+    "fortza_layer_or_expectation": "IP Address Layer (Layer)",
+    "source_file": null,
+    "source_column": null,
+    "status": "Missing",
+    "null_percentage": null,
+    "transform_needed": null,
+    "notes": ""
+  },
+  {
+    "expected_field": "ip_origin",
+    "fortza_layer_or_expectation": "Client Expectation: Origin IP address for VPN/proxy detection",
+    "source_file": null,
+    "source_column": null,
+    "status": "Missing",
+    "null_percentage": null,
+    "transform_needed": null,
+    "notes": "Suggested source: Order, CustomObject, LoginHistory"
+  },
+  {
+    "expected_field": "login_history",
+    "fortza_layer_or_expectation": "Client Expectation: Agent login timestamps for velocity",
+    "source_file": null,
+    "source_column": null,
+    "status": "Missing",
+    "null_percentage": null,
+    "transform_needed": null,
+    "notes": "Suggested source: LoginHistory, Event"
+  },
+  {
+    "expected_field": "order_date",
+    "fortza_layer_or_expectation": "Anomaly Layer (Layer); Intenso (Layer); Energico (Layer)",
+    "source_file": "Account.csv",
+    "source_column": "Fortza__Order_Date__c",
+    "status": "Present but low quality (high nulls)",
+    "null_percentage": 100.0,
+    "transform_needed": null,
+    "notes": "Order date available via Fortza fields or Order.EffectiveDate"
+  },
+  {
+    "expected_field": "payment_info",
+    "fortza_layer_or_expectation": "Client Expectation: Payment method for proof-of-sale",
+    "source_file": null,
+    "source_column": null,
+    "status": "Missing",
+    "null_percentage": null,
+    "transform_needed": null,
+    "notes": "Suggested source: Order, CustomObject"
+  },
+  {
+    "expected_field": "program_name",
+    "fortza_layer_or_expectation": "Client Expectation: Program/product name for mix analysis",
+    "source_file": null,
+    "source_column": null,
+    "status": "Missing",
+    "null_percentage": null,
+    "transform_needed": null,
+    "notes": "Suggested source: Order.POE_Program__c, Lead.Programs__c"
+  },
+  {
+    "expected_field": "salesperson_name",
+    "fortza_layer_or_expectation": "Anomaly Layer (Layer); Intenso (Layer); Energico (Layer)",
+    "source_file": "Account.csv",
+    "source_column": "OwnerId",
+    "status": "Present",
+    "null_percentage": 0.0,
+    "transform_needed": "Join with User object using OwnerId",
+    "notes": "Requires User object join to get salesperson name from OwnerId"
+  },
+  {
+    "expected_field": "store_number",
+    "fortza_layer_or_expectation": "Anomaly Layer (Layer); Intenso (Layer); Energico (Layer)",
+    "source_file": "Account.csv",
+    "source_column": "Fortza__Store_Number__c",
+    "status": "Present but low quality (high nulls)",
+    "null_percentage": 100.0,
+    "transform_needed": null,
+    "notes": "Store number available in Fortza and POE fields"
+  },
+  {
+    "expected_field": "territory",
+    "fortza_layer_or_expectation": "Client Expectation: Agent/dealer territory for authorization",
+    "source_file": null,
+    "source_column": null,
+    "status": "Missing",
+    "null_percentage": null,
+    "transform_needed": null,
+    "notes": "Suggested source: Account.Territory__c, Account_Territory__c"
+  },
+  {
+    "expected_field": "wireless_package",
+    "fortza_layer_or_expectation": "Anomaly Layer (Layer); Intenso (Layer); Energico (Layer)",
+    "source_file": "Account.csv",
+    "source_column": "Fortza__Wireless_Package__c",
+    "status": "Present but low quality (high nulls)",
+    "null_percentage": 100.0,
+    "transform_needed": null,
+    "notes": "Wireless package in Fortza custom fields"
+  },
+  {
+    "expected_field": "zip_code",
+    "fortza_layer_or_expectation": "Permanent Memory Geolocation (Layer); Google Address Validation (Layer); Smarty Address Validation (Layer); AI Prompt Layer (Layer); Geolocation Hotspot (Layer); Anomaly Layer (Layer); Intenso (Layer); Energico (Layer)",
+    "source_file": "Account.csv",
+    "source_column": "BillingPostalCode",
+    "status": "Present",
+    "null_percentage": 40.0,
+    "transform_needed": "Normalize address format, handle multi-line addresses",
+    "notes": "Postal/zip code available"
+  }
+]
