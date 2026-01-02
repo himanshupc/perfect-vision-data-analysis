@@ -1,0 +1,68 @@
+columnApiName,Description
+AccountId,Identifier of the related Account record associated with the Contact
+Account_Owner__c,Name or label representing the owner of the related Account
+Add_to_Agreements__c,Boolean flag indicating whether the Contact is included in agreements
+Chuzo_Member__c,Boolean flag indicating whether the Contact is marked as a Chuzo member
+CreatedById,Identifier of the user who created the Contact record
+CreatedDate,Timestamp indicating when the Contact record was created
+CurrencyIsoCode,ISO currency code associated with the Contact record
+DoNotCall,Boolean flag indicating whether the Contact should not be called
+Do_Not_Email__c,Boolean flag indicating whether the Contact should not receive emails
+Email,Email address associated with the Contact
+Fax,Fax number associated with the Contact
+Fortza_Auto_Pay__c,Boolean flag indicating whether automatic payment is enabled in Fortza context
+FSL_Member__c,Boolean flag indicating whether the Contact is marked as an FSL member
+HasOptedOutOfEmail,Boolean flag indicating whether the Contact has opted out of email communications
+HasOptedOutOfFax,Boolean flag indicating whether the Contact has opted out of fax communications
+Id,Unique identifier of the Contact record
+Include_in_Scheduling_Optimization__c,Boolean flag indicating whether the Contact is included in scheduling optimization logic
+IsDeleted,Boolean flag indicating whether the Contact record is marked as deleted
+IsEmailBounced,Boolean flag indicating whether emails sent to the Contact have bounced
+IsPersonAccount,Boolean flag indicating whether the Contact represents a Person Account
+IsPriorityRecord,Boolean flag indicating whether the Contact is marked as a priority record
+LastActivityDate,Date of the most recent activity associated with the Contact
+LastModifiedById,Identifier of the user who last modified the Contact record
+LastModifiedDate,Timestamp indicating when the Contact record was last modified
+LearnUponP__c,Custom field indicating an association or flag related to LearnUpon (exact meaning not observable)
+Create_in_LearnUpon__c,Boolean flag indicating whether the Contact should be created in LearnUpon
+MailingCity,City value from the Contact mailing address
+MailingCountry,Country value from the Contact mailing address
+MailingCountryCode,ISO country code corresponding to the mailing country
+MailingPostalCode,Postal or ZIP code from the Contact mailing address
+MailingState,State or province value from the Contact mailing address
+MailingStateCode,State or province code corresponding to the mailing state
+MailingStreet,Street address value from the Contact mailing address
+My_Dealer_Flag__c,Boolean flag indicating whether the Contact is marked as a dealer
+OwnerId,Identifier of the user who owns the Contact record
+Owner__c,Boolean or custom indicator related to Contact ownership (exact meaning not observable)
+pi_Needs_Score_Synced__c,Boolean flag indicating whether a score needs to be synchronized for the Contact
+pi_pardot_hard_bounced__c,Boolean flag indicating whether the Contact experienced a hard bounce in Pardot
+POE_Allow_DTV_Sell__c,Boolean flag indicating whether Direct TV selling is allowed for the Contact
+POE_Belongs_To_Partner__c,Boolean flag indicating whether the Contact belongs to a partner entity
+POE_Blacklist__c,Boolean flag indicating whether the Contact is blacklisted
+POE_Charter_Confirmation__c,Boolean flag indicating whether charter confirmation is enabled or completed
+POE_Enable_Trial_Period__c,Boolean flag indicating whether a trial period is enabled for the Contact
+POE_Existing_Agent_Flag__c,Boolean flag indicating whether the Contact is associated with an existing agent
+POE_IsTmobileAllowed__c,Boolean flag indicating whether T-Mobile related activity is allowed for the Contact
+POE_Point_Of_Contact__c,Boolean flag indicating whether the Contact is designated as a point of contact
+POE_SMS_Opt_In__c,Boolean flag indicating whether the Contact has opted in to receive SMS communications
+POE_WS_Email__c,Boolean flag indicating whether the Contact is enabled for WS email communications
+Principal_Owner__c,Boolean flag indicating whether the Contact is marked as a principal owner
+salesintelio__Attempted_Enrichment__c,Boolean flag indicating whether an enrichment attempt was made via SalesIntel
+salesintelio__SalesIntel_Changed_Job__c,Boolean flag indicating whether SalesIntel detected a job change for the Contact
+salesintelio__SalesIntel_Enriched__c,Boolean flag indicating whether the Contact was successfully enriched via SalesIntel
+salesintelio__SalesIntel_Exported__c,Boolean flag indicating whether the Contact data was exported via SalesIntel
+salesintelio__SalesIntel_Machine_Verified__c,Boolean flag indicating whether the Contact data was machine-verified by SalesIntel
+salesintelio__SalesIntel_Up_to_Date__c,Boolean flag indicating whether the Contact data is marked as up to date by SalesIntel
+SMS_Opt_Out__c,Boolean flag indicating whether the Contact has opted out of SMS communications
+SR_Resource__c,Boolean flag indicating whether the Contact is marked as a service or support resource
+SystemModstamp,System-maintained timestamp indicating the last system modification to the Contact record
+Title,Job title associated with the Contact
+Under_Contract__c,Boolean flag indicating whether the Contact is currently under contract
+vlocity_cmt__Authorized__c,Boolean flag indicating whether the Contact is authorized within Vlocity context
+vlocity_cmt__DaysSinceLastContact__c,Numeric value indicating days since the last recorded contact interaction
+vlocity_cmt__HasFraud__c,Boolean flag indicating whether the Contact is flagged for fraud in Vlocity context
+vlocity_cmt__IsActive__c,Boolean flag indicating whether the Contact is marked as active in Vlocity context
+vlocity_cmt__IsEmployee__c,Boolean flag indicating whether the Contact is marked as an employee in Vlocity context
+vlocity_cmt__IsPartner__c,Boolean flag indicating whether the Contact is marked as a partner in Vlocity context
+vlocity_cmt__IsPersonAccount__c,Boolean flag indicating whether the Contact is marked as a person account in Vlocity context

@@ -1,0 +1,101 @@
+columnApiName,Description
+AccountId,Reference identifier linking the order record to an associated account
+Activated__c,Numeric flag indicating whether the order has been activated (observed values 0.0)
+BillingCity,City value used for billing address on the order
+BillingCountry,Country name used for billing address on the order
+BillingCountryCode,Country code corresponding to the billing country (e.g., US)
+BillingPostalCode,Postal or ZIP code used for billing address
+BillingState,State or region name used for billing address
+BillingStateCode,State or region code used for billing address (e.g., TX)
+BillingStreet,Street address used for billing
+Canceled__c,Numeric flag indicating whether the order has been canceled (observed values 0.0)
+Conflict_Order__c,Boolean flag indicating whether the order is marked as conflicting
+CreatedById,Identifier of the user or system that created the order record
+CreatedDate,Timestamp indicating when the order record was created
+Created_by_Brightspeed_API__c,Boolean flag indicating whether the order was created via Brightspeed API
+Disconnected__c,Boolean flag indicating whether the order is marked as disconnected
+Draft__c,Numeric flag indicating whether the order is in draft state (observed values 0.0 or 1.0)
+DSL_Migration__c,Boolean flag indicating whether the order is associated with a DSL migration
+EffectiveDate,Date indicating when the order becomes effective
+Email__c,Email address associated with the order record
+Id,Unique identifier of the order record
+isActive__c,Boolean flag indicating whether the order is marked as active
+IsDeleted,Boolean flag indicating whether the order record has been deleted
+IsReductionOrder,Boolean flag indicating whether the order is marked as a reduction order
+LastModifiedById,Identifier of the user or system that last modified the order record
+LastModifiedDate,Timestamp indicating when the order record was last modified
+OpportunityId,Reference identifier linking the order to an associated opportunity
+OrderNumber,Human-readable order number assigned to the order
+OwnerId,Identifier of the user who owns the order record
+PaymentCalculated__c,Boolean flag indicating whether payment calculation has been completed
+Pending_Installation__c,Numeric or boolean flag indicating whether installation is pending (observed values 0.0 or 1.0)
+Phone__c,Phone number associated with the order record
+POE_AccountNumber__c,Numeric identifier associated with an external or partner account for the order (observed large numeric values and nulls)
+POE_Call_Order__c,Boolean flag indicating whether the order is classified as a call-based order
+POE_Dealer__c,Reference identifier associated with a dealer entity linked to the order (observed as record-style IDs or null)
+POE_Early_Installation_Date__c,Date indicating an early or preliminary installation date for the order
+POE_InstallationDate__c,Date indicating the scheduled installation date for the order
+POE_isLocked__c,Boolean flag indicating whether the order record is locked from modification
+POE_Is_Shell_Order__c,Boolean flag indicating whether the order is marked as a shell or placeholder order
+POE_My_Dealer_Flag__c,Boolean flag indicating whether the order is associated with the current or assigned dealer
+POE_OrderId__c,Numeric identifier representing an external or partner order ID
+POE_OrderNumber__c,External or partner-facing order number associated with the order
+POE_Program__c,Text field indicating the program or partner program under which the order was created (e.g., Frontier, EarthLink, Charter/Spectrum)
+POE_RepTitle__c,Text field indicating the role or title of the representative associated with the order (e.g., Self Service, Phone Sales)
+POE_TransactionId__c,Identifier representing an external transaction associated with the order
+Pricebook2Id,Reference identifier linking the order to an associated price book
+RecordTypeId,Identifier indicating the record type assigned to the order
+Referral_Code__c,Reference or code value associated with a referral tied to the order (observed as populated or null)
+ShippingCity,City value used for the shipping address on the order
+ShippingCountry,Country name used for the shipping address
+ShippingCountryCode,Country code corresponding to the shipping country (e.g., US)
+ShippingPostalCode,Postal or ZIP code used for the shipping address
+ShippingState,State or region name used for the shipping address
+ShippingStateCode,State or region code used for the shipping address (e.g., TX)
+ShippingStreet,Street address used for shipping
+Status,Text value indicating the current status of the order (e.g., Draft, Pending Installation)
+StatusCode,System-level status code corresponding to the order status (observed value: Draft)
+SystemModstamp,System-generated timestamp indicating the last system modification to the order record
+TotalAmount,Numeric value representing the total monetary amount associated with the order
+Type,Text value indicating the order type (observed value: Closed Won)
+vlocity_cmt__AccountId__c,Reference identifier linking the record to an associated account
+vlocity_cmt__AccountRecordType__c,Text value indicating the account record type associated with the order (observed value: PersonAccount)
+vlocity_cmt__CreatedByAPI__c,Boolean flag indicating whether the record was created via an API
+vlocity_cmt__DefaultCurrencyPaymentMode__c,Text value indicating the default payment mode for currency-based payments (observed value: Currency)
+vlocity_cmt__DeliveryMethod__c,Text value indicating the delivery method associated with the order (observed value: In Store)
+vlocity_cmt__EffectiveOneTimeCostTotal__c,Numeric value representing the total effective one-time cost associated with the order
+vlocity_cmt__EffectiveOneTimeLoyaltyTotal__c,Numeric value representing the total effective one-time loyalty amount associated with the order
+vlocity_cmt__EffectiveOneTimeTotal__c,Numeric value representing the total effective one-time amount associated with the order
+vlocity_cmt__EffectiveOrderTotal__c,Numeric value representing the total effective amount for the order
+vlocity_cmt__EffectiveRecurringCostTotal__c,Numeric value representing the total effective recurring cost associated with the order
+vlocity_cmt__EffectiveRecurringTotal__c,Numeric value representing the total effective recurring amount associated with the order
+vlocity_cmt__EffectiveUsageCostTotal__c,Numeric value representing the total effective usage-based cost associated with the order
+vlocity_cmt__EffectiveUsagePriceTotal__c,Numeric value representing the total effective usage-based price associated with the order
+vlocity_cmt__ExternalPricingStatus__c,Text value indicating the external pricing status for the order (observed value: Not Ready)
+vlocity_cmt__ForceSupplementals__c,Boolean flag indicating whether supplemental items are forcibly applied to the order
+vlocity_cmt__IsActiveOrderVersion__c,Boolean flag indicating whether this record represents the active version of the order
+vlocity_cmt__IsChangesAccepted__c,Boolean flag indicating whether changes to the order have been accepted
+vlocity_cmt__IsChangesAllowed__c,Boolean flag indicating whether changes to the order are permitted
+vlocity_cmt__IsContractRequired__c,Boolean flag indicating whether a contract is required for the order
+vlocity_cmt__IsPriced__c,Boolean flag indicating whether pricing has been applied or calculated for the order
+vlocity_cmt__IsSyncing__c,Boolean flag indicating whether the order is currently in a synchronization process
+vlocity_cmt__IsValidated__c,Boolean flag indicating whether the order has passed validation checks
+vlocity_cmt__JeopardySafetyIntervalUnit__c,Text value indicating the unit of time used for a jeopardy or safety interval (observed value: Seconds)
+vlocity_cmt__JeopardyStatus__c,Text value indicating the current jeopardy or risk status associated with the order (observed value: Green)
+vlocity_cmt__OneTimeLoyaltyTotal__c,Numeric value representing the total one-time loyalty amount associated with the order
+vlocity_cmt__OneTimeMarginTotal__c,Numeric value representing the total one-time margin associated with the order
+vlocity_cmt__OneTimeTotal2__c,Numeric value representing an alternate or secondary one-time total amount for the order
+vlocity_cmt__OneTimeTotal__c,Numeric value representing the primary one-time total amount associated with the order
+vlocity_cmt__OrderMarginTotal__c,Numeric value representing the total margin associated with the order
+vlocity_cmt__OrderStatus__c,Text value indicating the current internal status of the order (observed value: Ready To Submit)
+vlocity_cmt__OrderTotal__c,Numeric value representing the total calculated amount for the order
+vlocity_cmt__OriginatingChannel__c,Text value indicating the channel through which the order originated (observed value: Call Center)
+vlocity_cmt__Pricebook__c,Text value indicating the price book associated with the order (observed value: Standard Price Book)
+vlocity_cmt__RecurringMarginTotal__c,Numeric value representing the total recurring margin associated with the order
+vlocity_cmt__RecurringTotal2__c,Numeric value representing an alternate or secondary recurring total amount for the order
+vlocity_cmt__RecurringTotal__c,Numeric value representing the primary recurring total amount associated with the order
+vlocity_cmt__ShippingPostalCode__c,Postal or ZIP code value used for shipping (observed values include TX and numeric postal codes)
+vlocity_cmt__ShippingState__c,State or region value used for shipping (observed value: Texas)
+vlocity_cmt__TotalMonthlyDiscount__c,Numeric value representing the total monthly discount amount associated with the order
+vlocity_cmt__TotalOneTimeDiscount__c,Numeric value representing the total one-time discount amount associated with the order
+vlocity_cmt__UsageMarginTotal__c,Numeric value representing the total usage-based margin associated with the order

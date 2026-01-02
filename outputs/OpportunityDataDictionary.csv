@@ -1,0 +1,84 @@
+columnApiName,Description
+AccountId,Identifier linking the opportunity record to a related account
+Account_Territory__c,Custom field indicating the sales or business territory associated with the account
+AutoPay__c,Custom boolean field indicating whether automatic payment is enabled or applicable
+Budget_Confirmed__c,Custom boolean field indicating whether budget confirmation has been recorded
+Click2Create_Flag__c,Custom boolean field indicating whether the opportunity was created via a Click2Create or similar automated process
+CloseDate,Date on which the opportunity is expected or scheduled to close
+CreatedById,Identifier of the user who created the opportunity record
+CreatedDate,System timestamp indicating when the opportunity record was created
+Created_by_VPN_User__c,Custom boolean field indicating whether the record was created by a user connected via VPN
+Documents_Ready__c,Custom boolean field indicating whether required documents are marked as ready
+Ebill_Registration__c,Custom boolean field indicating whether electronic billing registration is completed or enabled
+Fiscal,Numeric value representing the fiscal year context used by the organization
+FiscalQuarter,Numeric value representing the fiscal quarter associated with the opportunity
+FiscalYear,Numeric value representing the fiscal year associated with the opportunity
+ForecastCategory,Standard Salesforce field indicating the forecast category assigned to the opportunity
+Fortza_Auto_Pay__c,Custom boolean field likely indicating Fortza-related automatic payment eligibility or configuration
+Frontier_911_Terms_Sent__c,Custom boolean field indicating whether Frontier 911 terms have been sent for the opportunity
+Full_Credit_Check__c,Custom boolean field indicating whether a full credit check has been completed
+HasOpenActivity,Standard Salesforce boolean field indicating whether the opportunity has any open related activities
+HasOpportunityLineItem,Standard Salesforce boolean field indicating whether the opportunity has one or more associated line items
+HasOverdueTask,Standard Salesforce boolean field indicating whether the opportunity has any overdue related tasks
+Id,Unique identifier of the opportunity record
+Inside_Recruiter__c,Custom boolean field indicating whether an inside recruiter is associated with the opportunity
+IsClosed,Standard Salesforce boolean field indicating whether the opportunity is in a closed stage
+IsDeleted,Standard Salesforce boolean field indicating whether the opportunity record has been deleted
+IsPrivate,Standard Salesforce boolean field indicating whether the opportunity is marked as private
+IsWon,Standard Salesforce boolean field indicating whether the opportunity is marked as won
+LastModifiedById,Identifier of the user who last modified the opportunity record
+LastModifiedDate,System timestamp indicating when the opportunity record was last modified
+LastStageChangeDate,System timestamp indicating when the opportunity stage last changed
+Maps_Country__c,Custom field indicating the country value derived from or stored for mapping purposes
+Maps_PostalCode__c,Custom field indicating the postal or ZIP code value used for mapping or location purposes
+Modified_Over_60_days__c,Custom boolean field indicating whether the opportunity has been modified after a period exceeding 60 days
+Opportunity_Dealer_Office__c,Custom field indicating the dealer office associated with the opportunity
+Opportunity_Orchestration_Available__c,Custom boolean field indicating whether orchestration features or workflows are available for the opportunity
+Opportunity_Owner__c,Custom field displaying the name or label of the user designated as the opportunity owner
+Opportunity_Paperwork_Status__c,Custom field indicating the current paperwork status of the opportunity
+OwnerId,Identifier of the user who owns the opportunity record
+PartnerAccountId,Identifier linking the opportunity to a related partner account
+POE_CC_Flag__c,Custom boolean field indicating whether a POE credit card–related flag is set for the opportunity
+POE_Clicker_Origin__c,Custom field indicating the originating channel or source for POE clicker activity
+POE_CreditFreeze__c,Custom boolean field indicating whether a credit freeze is associated with the opportunity under POE context
+POE_Cross_Sale__c,Custom boolean field indicating whether the opportunity is marked as a cross-sale under POE context
+POE_Current_VoIP__c,Custom boolean field indicating whether the opportunity involves an existing or current VoIP service under POE context
+POE_Dealer__c,Custom field containing an identifier linking the opportunity to a POE dealer entity
+POE_FraudObservation__c,Custom boolean field indicating whether a fraud-related observation has been recorded under POE context
+POE_My_Dealer_Flag__c,Custom boolean field indicating whether the opportunity is associated with the user’s own dealer under POE context
+POE_New_Product_Opportunity__c,Custom boolean field indicating whether the opportunity represents a new product opportunity under POE context
+POE_Reference_Number__c,Custom numeric field storing a reference number associated with the opportunity under POE context
+POE_SSN_Agreement__c,Custom boolean field indicating whether an SSN-related agreement has been acknowledged or recorded
+POE_TPV_Verified__c,Custom boolean field indicating whether third-party verification has been completed under POE context
+Primary_Business_EE__c,Custom boolean field indicating whether the opportunity is marked as a primary business or enterprise engagement
+Probability,Standard Salesforce numeric field indicating the probability percentage assigned to the opportunity
+Program_Division__c,Custom field indicating the program or business division associated with the opportunity
+PushCount,Standard Salesforce numeric field indicating the number of push or sync attempts related to the record
+RecordTypeId,Identifier of the record type assigned to the opportunity
+Region__c,Custom field indicating the geographic or business region associated with the opportunity
+ROI_Analysis_Completed__c,Custom boolean field indicating whether a return-on-investment analysis has been completed for the opportunity
+salesintelio__Attempted_Enrichment__c,Custom boolean field indicating whether a SalesIntel enrichment attempt was made for the opportunity
+salesintelio__SalesIntel_Enriched__c,Custom boolean field indicating whether the opportunity was successfully enriched using SalesIntel data
+salesintelio__SalesIntel_Exported__c,Custom boolean field indicating whether SalesIntel-enriched data was exported from the system
+salesintelio__SalesIntel_Up_to_Date__c,Custom boolean field indicating whether SalesIntel enrichment data is considered current or up to date
+SystemModstamp,System-generated timestamp reflecting the last system-level modification to the record
+vlocity_cmt__AccountRecordType__c,Custom field indicating the account record type classification used by Vlocity/CMT context
+vlocity_cmt__DefaultCurrencyPaymentMode__c,Custom field indicating the default currency or payment mode defined under Vlocity/CMT configuration
+vlocity_cmt__EffectiveOneTimeCostTotal__c,Custom numeric field representing the effective total of one-time costs calculated under Vlocity/CMT context
+vlocity_cmt__EffectiveOneTimeLoyaltyTotal__c,Custom numeric field representing the effective total of one-time loyalty-related amounts under Vlocity/CMT context
+vlocity_cmt__EffectiveOneTimeTotal__c,Custom numeric field representing the effective combined total of one-time amounts under Vlocity/CMT context
+vlocity_cmt__EffectiveOpportunityTotal__c,Custom numeric field representing the effective total value of the opportunity under Vlocity/CMT context
+vlocity_cmt__EffectiveRecurringCostTotal__c,Custom numeric field representing the effective total of recurring costs under Vlocity/CMT context
+vlocity_cmt__EffectiveRecurringTotal__c,Custom numeric field representing the effective total of recurring charges under Vlocity/CMT context
+vlocity_cmt__EffectiveUsageCostTotal__c,Custom numeric field representing the effective total of usage-based costs under Vlocity/CMT context
+vlocity_cmt__EffectiveUsagePriceTotal__c,Custom numeric field representing the effective total price of usage-based charges under Vlocity/CMT context
+vlocity_cmt__IsContractRequired__c,Custom boolean field indicating whether a contract is required under Vlocity/CMT context
+vlocity_cmt__OneTimeLoyaltyTotal__c,Custom numeric field representing the total of one-time loyalty-related amounts under Vlocity/CMT context
+vlocity_cmt__OneTimeMarginTotal__c,Custom numeric field representing the total margin calculated for one-time charges under Vlocity/CMT context
+vlocity_cmt__OneTimeTotal__c,Custom numeric field representing the total of one-time charges under Vlocity/CMT context
+vlocity_cmt__OpportunityMarginTotal__c,Custom numeric field representing the total margin calculated for the opportunity under Vlocity/CMT context
+vlocity_cmt__OpportunityTotal__c,Custom numeric field representing the total value of the opportunity under Vlocity/CMT context
+vlocity_cmt__RecurringMarginTotal__c,Custom numeric field representing the total margin calculated for recurring charges under Vlocity/CMT context
+vlocity_cmt__RecurringTotal__c,Custom numeric field representing the total recurring charge amount calculated under Vlocity/CMT context
+vlocity_cmt__UsageMarginTotal__c,Custom numeric field representing the total margin calculated for usage-based charges under Vlocity/CMT context
+vlocity_cmt__ValidationStatus__c,Custom field indicating the current validation status of Vlocity/CMT calculations or processes for the opportunity

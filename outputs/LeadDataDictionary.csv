@@ -1,0 +1,84 @@
+columnApiName,Description
+Accessory_Division__c,Indicates the accessory business division associated with the record, based on short coded values (e.g., WIRE).
+Accessory_Region__c,Represents a regional classification for accessories, using abbreviated region codes (e.g., NTH, STH).
+Accessory_Territory__c,Specifies a finer-grained accessory territory identifier within a region, using short codes (e.g., NEW, PNY, CTN).
+Accessory__c,Boolean flag indicating whether the record is associated with an accessory classification.
+ATT_Footprint__c,Boolean flag indicating whether the record falls within an AT&T footprint or coverage designation.
+AT_T__c,Boolean flag indicating association with AT&T, inferred as a categorical indicator.
+Catalog__c,Boolean flag indicating whether the record is included in or associated with a catalog.
+City,City name associated with the record’s address or location.
+Company,Company or organization name associated with the record.
+Country,Full country name associated with the record’s address or location.
+CountryCode,ISO-style country code corresponding to the country value (e.g., US).
+CreatedById,Salesforce user ID of the user who created the record.
+CreatedDate,Timestamp indicating when the record was created in Salesforce.
+CurrencyIsoCode,ISO currency code indicating the currency context of the record (e.g., USD).
+Current_Business_Owner__c,Boolean flag indicating whether a current business owner is assigned or applicable.
+Current_Exede_Dealer__c,Boolean flag indicating whether a current Exede dealer relationship exists or is applicable.
+Customer_Account__c,Boolean flag indicating whether the lead is associated with or classified as a customer account.
+DB_Created_Date_without_Time__c,Date value representing the record creation date stored without a time component.
+DB_Lead_Age__c,Numeric value indicating the age of the lead, likely expressed in days based on magnitude and decimal format.
+Division__c,Division identifier associated with the lead, represented by short coded values (e.g., DOM).
+DoNotCall,Standard Salesforce flag indicating whether the lead should not be contacted by phone.
+Do_Not_Email__c,Custom boolean flag indicating whether the lead should not be contacted via email.
+DTV_RES__c,Boolean flag indicating association with a DTV residential classification.
+Earthlink__c,Boolean flag indicating association with Earthlink.
+Email,Email address associated with the lead.
+Exede__c,Boolean flag indicating association with Exede.
+Five_Digit_Zip__c,Five-digit postal code associated with the lead’s address.
+Fortza_Auto_Pay__c,Boolean flag indicating whether an auto-pay setting related to Fortza is enabled or applicable.
+Frontier__c,Boolean flag indicating association with Frontier.
+HasOptedOutOfEmail,Standard Salesforce flag indicating the lead has opted out of email communications.
+HasOptedOutOfFax,Standard Salesforce flag indicating the lead has opted out of fax communications.
+Id,Unique Salesforce record identifier for the lead.
+Industry,Industry classification associated with the lead, represented by descriptive category values (e.g., Insurance, Technology).
+Internet_Service_Provider__c,Boolean flag indicating whether the lead is associated with an internet service provider classification.
+IsConverted,Standard Salesforce flag indicating whether the lead has been converted.
+IsDeleted,Standard Salesforce flag indicating whether the record is deleted.
+IsPriorityRecord,Boolean flag indicating whether the lead is marked as a priority record.
+IsUnreadByOwner,Standard Salesforce flag indicating whether the record is unread by the current owner.
+Kinetic_by_Windstream__c,Boolean flag indicating association with Kinetic by Windstream.
+LastActivityDate,Date of the most recent activity associated with the lead.
+LastModifiedById,Salesforce user ID of the user who last modified the record.
+LastModifiedDate,Timestamp indicating when the record was last modified.
+LastTransferDate,Date indicating when the lead was last transferred, if applicable.
+LeadSource,Source from which the lead originated (e.g., Trade Show, Website, Advertisement).
+Lead_Owner__c,Name or identifier representing the current owner of the lead.
+Macrocell__c,Boolean flag indicating association with a macrocell classification.
+Microwave__c,Boolean flag indicating association with a microwave-related classification.
+MobilePhone,Mobile phone number associated with the lead.
+Mounts_Structural_Support__c,Boolean flag indicating whether mounts or structural support components are associated with the lead.
+NumberOfEmployees,Numeric value representing the reported number of employees for the lead’s organization.
+OwnerId,Salesforce user ID identifying the current owner of the lead record.
+Phone,Primary phone number associated with the lead.
+pi_Needs_Score_Synced__c,Boolean flag indicating whether a Pardot (PI) needs score has been synchronized.
+pi_pardot_hard_bounced__c,Boolean flag indicating whether the lead’s email experienced a hard bounce in Pardot.
+PostalCode,Postal or ZIP code associated with the lead’s address.
+Public_Safety_Communication__c,Boolean flag indicating association with public safety communication classification.
+QualifiedbyDefault__c,Boolean flag indicating whether the lead is marked as qualified by default.
+Quote__c,Boolean flag indicating whether a quote is associated with the lead.
+Rating,Lead rating value indicating relative engagement or priority (e.g., Hot, Warm, Cold).
+Region__c,Region identifier associated with the lead, represented by short coded values (e.g., ESR).
+Reinforcement_Kits__c,Boolean flag indicating association with reinforcement kits.
+Rigging_Components_Products__c,Boolean flag indicating association with rigging components or products.
+Safety_PPE__c,Boolean flag indicating association with safety or personal protective equipment classification.
+salesintelio__Attempted_Enrichment__c,Boolean flag indicating whether a SalesIntel enrichment attempt was made for the lead.
+salesintelio__SalesIntel_Changed_Job__c,Boolean flag indicating whether SalesIntel detected a job change for the lead.
+salesintelio__SalesIntel_Enriched__c,Boolean flag indicating whether SalesIntel enrichment data is present for the lead.
+salesintelio__SalesIntel_Exported__c,Boolean flag indicating whether the lead data was exported to SalesIntel.
+salesintelio__SalesIntel_Machine_Verified__c,Boolean flag indicating whether SalesIntel machine verification was completed for the lead.
+salesintelio__SalesIntel_Up_to_Date__c,Boolean flag indicating whether SalesIntel data for the lead is considered up to date.
+Sales_Installations__c,Boolean flag indicating association with sales installations.
+Salutation,Salutation value associated with the lead’s name (e.g., Mr.).
+Satellite_Installation__c,Boolean flag indicating association with satellite installation activities or classification.
+Site_Testing_Tools__c,Boolean flag indicating association with site testing tools.
+Small_Cell_5G_Solutions__c,Boolean flag indicating association with small cell 5G solutions.
+StateCode,State or province code associated with the lead’s address (e.g., CT, MA, NY).
+Status,Status value representing the current lifecycle state of the lead (e.g., New, Working, Nurturing).
+Street,Street address associated with the lead.
+Structured_Cabling__c,Boolean flag indicating association with structured cabling.
+SystemModstamp,System-generated timestamp indicating the last system modification to the record.
+Territory__c,Territory identifier associated with the lead, represented by short codes (e.g., NET, SET).
+Title,Job title associated with the lead (e.g., Senior VP, Vice President).
+Website,Website URL associated with the lead or related organization.
+Wireless__c,Boolean flag indicating association with wireless-related classification.
